@@ -2,8 +2,6 @@ from rest_framework.views import APIView
 from .serializers import Html_to_PDFSerializer
 from weasyprint import HTML
 from django.http import HttpResponse
-import os
-dirname = os.path.dirname(__file__)
 
 class HTML_to_PDFView(APIView):
     serializer_class = Html_to_PDFSerializer
